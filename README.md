@@ -15,7 +15,7 @@ Powershell Scripts &amp; Snippets
 ## Office 365
 - [Connect_O365](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Connect_O365.ps1) - Prompt for creds, then connect to tenant.
 - [Connect_O365_SfB](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Connect_O365_SfB.ps1) - As above, but for Lync/SfB tenant.
-- [Enable_LegalHold](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Enable_Legalhold.ps1) - Enables Litigation Hold on all Mailboxes.
+- [Enable_LegalHold](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Enable_LegalHold.ps1) - Enables Litigation Hold on all Mailboxes.
 - [MailboxDelegations](https://github.com/thatCraigW/PowerShell/blob/master/Office365/MailboxDelegations.ps1) - Send As, Full Access and Send on Behalf commands.
 
 ## Windows
