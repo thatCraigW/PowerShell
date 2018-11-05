@@ -1,0 +1,5 @@
+﻿$cred = Get-Credential
+$session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell/ -Credential $cred -Authentication Basic -AllowRedirection
+Import-PSSession $session
+New-TransportRule -Name ‘Rule 1 – Block ZIP Attachments’ -Priority ‘0’ -Enabled $true -AttachmentExtensionMatchesWords 'zip', ‘vbs’,’scr’ -RejectMessageReasonText ‘Sorry your mail was blocked because it contained a ZIP file’ -StopRuleProcessing $true -SetAuditSeverity Low -SenderAddressLocation HeaderOrEnvelope
+New-TransportRule -Name ‘Rule 2 – Block Executable Content’ -Priority ‘0’ -Enabled $true -AttachmentHasExecutableContent $True -RejectMessageReasonText ‘Sorry your mail was blocked because it contained executable content’ -StopRuleProcessing $true -SetAuditSeverity Low -SenderAddressLocation HeaderOrEnvelope

@@ -1,0 +1,1 @@
+﻿Get-MsolUser | Where-Object { $_.isLicensed -eq "TRUE" } | Select DisplayName,UserPrincipalName,IsLicensed | Export-Csv c:\temp\LicensedUsers.csv

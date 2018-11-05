@@ -1,0 +1,1 @@
+﻿Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select Identity, User, AccessRights | Export-CSV "PublicFolderPermissions.csv" -NoTypeInformation
