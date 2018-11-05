@@ -5,9 +5,9 @@ Powershell Scripts &amp; Snippets
 - [SearchByOU](https://github.com/thatCraigW/PowerShell/blob/master/ActiveDirectory/SearchByOU.ps1) - Search all users within a specific location and get properties, export to csv.
 
 ## Azure
-- [Azure_Connect](https://github.com/thatCraigW/PowerShell/blob/master/Azure/Azure_Connect.ps1) - Does what it says on the box.
-- [Azure_RemoveUser](https://github.com/thatCraigW/PowerShell/blob/master/Azure/Azure_RemoveUser.ps1) - Prompts for email before executing Remove-MsolUser command (inc. recycle bin).
+- [Connect_Azure](https://github.com/thatCraigW/PowerShell/blob/master/Azure/Connect_Azure.ps1) - Does what it says on the box.
 - [Get_LicensedUsers](https://github.com/thatCraigW/PowerShell/blob/master/Azure/Get_LicensedUsers.ps1) - Lists all licensed users.
+- [RemoveUser](https://github.com/thatCraigW/PowerShell/blob/master/Azure/RemoveUser.ps1) - Prompts for email before executing Remove-MsolUser command (inc. recycle bin).
 
 ## Exchange
 - [ExportPST](https://github.com/thatCraigW/PowerShell/blob/master/Exchange/ExportPST.ps1) - Export PSTs from mailboxes.
