@@ -3,20 +3,14 @@ Powershell Scripts &amp; Snippets
 
 ## Active Directory
 - [Example](https://github.com/thatCraigW/PowerShell/blob/master/.ps1) - Example Description
-- [Example](https://github.com/thatCraigW/PowerShell/blob/master/.ps1) - Example Description
-- [Example](https://github.com/thatCraigW/PowerShell/blob/master/.ps1) - Example Description
 
 ## Azure
-- [Example](https://github.com/thatCraigW/PowerShell/blob/master/.ps1) - Example Description
-- [Example](https://github.com/thatCraigW/PowerShell/blob/master/.ps1) - Example Description
 - [Example](https://github.com/thatCraigW/PowerShell/blob/master/.ps1) - Example Description
 
 ## Exchange (OnPremises)
 - [ExportPST](https://github.com/thatCraigW/PowerShell/blob/master/ExportPST.ps1) - Export PSTs from mailboxes.
 
 ## Office 365
-- [Example](https://github.com/thatCraigW/PowerShell/blob/master/.ps1) - Example Description
-- [Example](https://github.com/thatCraigW/PowerShell/blob/master/.ps1) - Example Description
 - [MailboxDelegations](https://github.com/thatCraigW/PowerShell/blob/master/MailboxDelegations.ps1) - Send As, Full Access and Send on Behalf commands.
 
 ## Windows Machines
