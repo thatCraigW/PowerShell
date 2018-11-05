@@ -12,7 +12,7 @@ Powershell Scripts &amp; Snippets
 - [ExportPST](https://github.com/thatCraigW/PowerShell/blob/master/Exchange/ExportPST.ps1) - Export PSTs from mailboxes.
 
 ## Office 365
-- [MailboxDelegations](https://github.com/thatCraigW/PowerShell/blob/master/Office 365/MailboxDelegations.ps1) - Send As, Full Access and Send on Behalf commands.
+- [MailboxDelegations](https://github.com/thatCraigW/PowerShell/blob/master/Office365/MailboxDelegations.ps1) - Send As, Full Access and Send on Behalf commands.
 
 ## Windows Machines
 
