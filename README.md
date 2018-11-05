@@ -2,19 +2,19 @@
 Powershell Scripts &amp; Snippets
 
 ## Active Directory
-- [SearchByOU](https://github.com/thatCraigW/PowerShell/blob/master/ActiveDirectory/SearchByOU.ps1) - Example Description
+- [SearchByOU](https://github.com/thatCraigW/PowerShell/blob/master/ActiveDirectory/SearchByOU.ps1) - Search all users within a specific location and get properties, export to csv.
 
 ## Azure
 - [Azure_Connect_PS](https://github.com/thatCraigW/PowerShell/blob/master/Azure/Azure_Connect_PS.ps1) - Does what it says on the box.
 - [Azure_Remove_User](https://github.com/thatCraigW/PowerShell/blob/master/Azure/Azure_Remove_User.ps1) - Prompts for email before executing Remove-MsolUser command (inc. recycle bin).
 
-## Exchange (OnPremises)
+## Exchange
 - [ExportPST](https://github.com/thatCraigW/PowerShell/blob/master/Exchange/ExportPST.ps1) - Export PSTs from mailboxes.
 
 ## Office 365
 - [MailboxDelegations](https://github.com/thatCraigW/PowerShell/blob/master/Office365/MailboxDelegations.ps1) - Send As, Full Access and Send on Behalf commands.
 
-## Windows Machines
+## Windows
 
 - [DownloadAndExecuteFiles](https://github.com/thatCraigW/PowerShell/blob/master/Windows/DownloadAndExecuteFiles.ps1) - Download a file from a URL, then run it (silently).
 - [EnableScripts](https://github.com/thatCraigW/PowerShell/blob/master/Windows/EnableScripts.ps1) - Enables PowerShell scripts to run on the local machine.
