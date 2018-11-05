@@ -18,6 +18,6 @@ Powershell Scripts &amp; Snippets
 
 ## Windows Machines
 
-- [VerifyVPNConnected](https://github.com/thatCraigW/PowerShell/) - Confirms if you're connected to a VPN. It doesn't care which, just that one is live.
+- [VerifyVPNConnected](https://github.com/thatCraigW/PowerShell/blob/master/VerifyVPNConnected.ps1) - Confirms if you're connected to a VPN. It doesn't care which, just that one is live.
 - [Example](https://github.com/thatCraigW/PowerShell/) - Example Description
 - [Example](https://github.com/thatCraigW/PowerShell/) - Example Description
