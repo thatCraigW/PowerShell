@@ -18,8 +18,8 @@ Powershell Scripts &amp; Snippets
 - [Convert_MailboxToShared](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Convert_MailboxToShared.ps1) - Prompts for account, then converts to shared mailbox.
 - [Enable_LegalHold](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Enable_LegalHold.ps1) - Enables Litigation Hold on all Mailboxes.
 - [Get_DistributionGroupMembers](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Get_DistributionGroupMembers.ps1) - Loops through ALL DGs and lists every member of each DG.
-- [InPlaceArchive_AutoExpanding](https://github.com/thatCraigW/PowerShell/blob/master/Office365/InPlaceArchive_AutoExpanding.ps1) - Wizard to audit or set AutoExpandingArchive specific mailbox or tenant.
 - [MailboxDelegations](https://github.com/thatCraigW/PowerShell/blob/master/Office365/MailboxDelegations.ps1) - Send As, Full Access and Send on Behalf commands.
+- [Wizard_AutoExpandingArchive](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Wizard_AutoExpandingArchive.ps1) - Wizard to audit or set AutoExpandingArchive specific mailbox or tenant.
 
 ## Windows
 
