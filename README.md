@@ -15,7 +15,10 @@ Powershell Scripts &amp; Snippets
 ## Office 365
 - [Connect_O365](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Connect_O365.ps1) - Prompt for creds, then connect to tenant.
 - [Connect_O365_SfB](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Connect_O365_SfB.ps1) - As above, but for Lync/SfB tenant.
+- [Convert_MailboxToShared](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Convert_MailboxToShared.ps1) - Prompts for account, then converts to shared mailbox.
 - [Enable_LegalHold](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Enable_LegalHold.ps1) - Enables Litigation Hold on all Mailboxes.
+- [Get_DistributionGroupMembers](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Get_DistributionGroupMembers.ps1) - Loops through ALL DGs and lists every member of each DG.
+- [InPlaceArchive_AutoExpanding](https://github.com/thatCraigW/PowerShell/blob/master/Office365/InPlaceArchive_AutoExpanding.ps1) - A wizard to audit and set AutoExpandingArchive on individual mailboxs or whole tenant.
 - [MailboxDelegations](https://github.com/thatCraigW/PowerShell/blob/master/Office365/MailboxDelegations.ps1) - Send As, Full Access and Send on Behalf commands.
 
 ## Windows
