@@ -13,6 +13,8 @@ Powershell Scripts &amp; Snippets
 
 ## Office 365
 - [MailboxDelegations](https://github.com/thatCraigW/PowerShell/blob/master/Office365/MailboxDelegations.ps1) - Send As, Full Access and Send on Behalf commands.
+- [O365_Connect_PS](https://github.com/thatCraigW/PowerShell/blob/master/Office365/O365_Connect_PS.ps1) - Prompt for creds, then connect to tenant.
+- [O365_Connect_SfB_PS](https://github.com/thatCraigW/PowerShell/blob/master/Office365/O365_Connect_SfB_PS.ps1) - As above, but for Lync/SfB tenant.
 
 ## Windows
 
