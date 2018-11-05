@@ -2,7 +2,7 @@
 Powershell Scripts &amp; Snippets
 
 ## Active Directory
-- [SearchByOU](https://github.com/thatCraigW/PowerShell/blob/master/Active Directory/SearchByOU.ps1) - Example Description
+- [SearchByOU](https://github.com/thatCraigW/PowerShell/blob/master/ActiveDirectory/SearchByOU.ps1) - Example Description
 
 ## Azure
 - [Azure_Connect_PS](https://github.com/thatCraigW/PowerShell/blob/master/Azure/Azure_Connect_PS.ps1) - Does what it says on the box.
@@ -16,7 +16,7 @@ Powershell Scripts &amp; Snippets
 
 ## Windows Machines
 
-- [DownloadAndExecuteFiles](https://github.com/thatCraigW/PowerShell/blob/master/Windows Machines/DownloadAndExecuteFiles.ps1) - Download a file from a URL, then run it (silently).
-- [EnableScripts](https://github.com/thatCraigW/PowerShell/blob/master/Windows Machines/EnableScripts.ps1) - Enables PowerShell scripts to run on the local machine.
-- [GetPrinters](https://github.com/thatCraigW/PowerShell/blob/master/Windows Machines/GetPrinters.ps1) - List the printers available on the local machine.
-- [VerifyVPNConnected](https://github.com/thatCraigW/PowerShell/blob/master/Windows Machines/VerifyVPNConnected.ps1) - Confirms if you're connected to a VPN. It doesn't care which, just that one is live.
+- [DownloadAndExecuteFiles](https://github.com/thatCraigW/PowerShell/blob/master/Windows/DownloadAndExecuteFiles.ps1) - Download a file from a URL, then run it (silently).
+- [EnableScripts](https://github.com/thatCraigW/PowerShell/blob/master/Windows/EnableScripts.ps1) - Enables PowerShell scripts to run on the local machine.
+- [GetPrinters](https://github.com/thatCraigW/PowerShell/blob/master/Windows/GetPrinters.ps1) - List the printers available on the local machine.
+- [VerifyVPNConnected](https://github.com/thatCraigW/PowerShell/blob/master/Windows/VerifyVPNConnected.ps1) - Confirms if you're connected to a VPN. It doesn't care which, just that one is live.
