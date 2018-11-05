@@ -1,9 +1,9 @@
 ﻿#Connect to Office 365
-
+<#
 $cred = Get-Credential
 $session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell/ -Credential $cred -Authentication Basic -AllowRedirection
 Import-PSSession $session
-
+#>
 #Prompt user for location and filename to save output
 
 $file = Read-Host "Enter location and file name to save results, e.g. C:\temp\results.csv: "

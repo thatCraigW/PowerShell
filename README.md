@@ -2,7 +2,7 @@
 Powershell Scripts &amp; Snippets
 
 ## Active Directory
-- [SearchByOU](https://github.com/thatCraigW/PowerShell/blob/master/ActiveDirectory/SearchByOU.ps1) - Search all users within a specific location and get properties, export to csv.
+- [Get_UsersByOU](https://github.com/thatCraigW/PowerShell/blob/master/ActiveDirectory/Get_UsersByOU.ps1) - Search all users within a specific location and get properties, export to csv.
 
 ## Azure
 - [Connect_Azure](https://github.com/thatCraigW/PowerShell/blob/master/Azure/Connect_Azure.ps1) - Does what it says on the box.
@@ -18,6 +18,8 @@ Powershell Scripts &amp; Snippets
 - [Convert_MailboxToShared](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Convert_MailboxToShared.ps1) - Prompts for account, then converts to shared mailbox.
 - [Enable_LegalHold](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Enable_LegalHold.ps1) - Enables Litigation Hold on all Mailboxes.
 - [Get_DistributionGroupMembers](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Get_DistributionGroupMembers.ps1) - Loops through ALL DGs and lists every member of each DG.
+- [Get_MailboxLimits](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Get_MailboxLimits.ps1) - Retrieves full stats on a mailbox.
+- [Get_MailboxStats](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Get_MailboxStats.ps1) - Retrieves full stats on many (ALL) mailboxes.
 - [MailboxDelegations](https://github.com/thatCraigW/PowerShell/blob/master/Office365/MailboxDelegations.ps1) - Send As, Full Access and Send on Behalf commands.
 - [Wizard_AutoExpandingArchive](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Wizard_AutoExpandingArchive.ps1) - Wizard to audit or set AutoExpandingArchive specific mailbox or tenant.
 
