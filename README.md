@@ -21,7 +21,7 @@ Powershell Scripts &amp; Snippets
 ## Windows
 
 - [DownloadAndExecuteFiles](https://github.com/thatCraigW/PowerShell/blob/master/Windows/DownloadAndExecuteFiles.ps1) - Download a file from a URL, then run it (silently).
-- [EnableScripts](https://github.com/thatCraigW/PowerShell/blob/master/Windows/EnableScripts.ps1) - Enables PowerShell scripts to run on the local machine.
+- [Enable_Scripts](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Enable_Scripts.ps1) - Enables PowerShell scripts to run on the local machine.
 - [GetPrinters](https://github.com/thatCraigW/PowerShell/blob/master/Windows/GetPrinters.ps1) - List the printers available on the local machine.
 - [RegistryTestAndSave](https://github.com/thatCraigW/PowerShell/blob/master/Windows/RegistryTestAndSave.ps1) - Checks Registry Path exists, creates if it doesnt, and creates a new key. Configured for LabTech Integration.
 - [VerifyVPNConnected](https://github.com/thatCraigW/PowerShell/blob/master/Windows/VerifyVPNConnected.ps1) - Confirms if you're connected to a VPN. It doesn't care which, just that one is live.
