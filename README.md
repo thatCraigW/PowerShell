@@ -32,24 +32,26 @@ Powershell Scripts &amp; Snippets
 - [Get_VPNVerifyConnected](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Get_VPNVerifyConnected.ps1) - Confirms if you're connected to a VPN. It doesn't care which, just that one is live.
 
 ### Misc Fresh Build
-- [Misc FreshBuild](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild) - Things to consider for first-logon / automated builds.
-- - [Set_AppSuggestions](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_AppSuggestions.ps1) - Toggle for "Suggested" Apps.
-- - [Set_BloatApps](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_BloatApps.ps1) - Toggles for bloat apps like MineCraft UWP etc auto-installing.
+
+Things to consider for first-logon / automated builds.
+
+- [Set_AppSuggestions](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_AppSuggestions.ps1) - Toggle for "Suggested" Apps.
+- [Set_BloatApps](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_BloatApps.ps1) - Toggles for bloat apps like MineCraft UWP etc auto-installing.
 
 ### Misc Preferences
 
 Preference Toggles and default app/file associations.
 
-- - [Set_AutoRunAutoPlay](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_AutoRunAutoPlay.ps1) - Toggles for Auto Run and AutoPlay, default is both off.
-- - [Set_ControlPanelView](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_ControlPanelView.ps1) - Settings for Control Panel style, large, small icons or category view.
-- - [Set_ExplorerThumnails](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_ExplorerThumnails.ps1) - Sets Thumbnail generation / caching.
-- - [Set_ExtTypeHiddenFiles](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_ExtTypeHiddenFiles.ps1) - Choose to show/hide extentions & hidden files.
-- - [Set_FileExplorerDefaultWindow](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_FileExplorerDefaultWindow.ps1) - Choose if new explorer windows open This PC or Quick Access.
-- - [Set_KeyboardLanguage](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_KeyboardLanguage.ps1) - Add / Remove Keyboard Languages (try ENG INTL).
-- - [Set_LibraryMusicPicVid3D](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_LibraryMusicPicVid3D.ps1) - Show / Hide Music, Pictures, Videos, 3D Objects Libraries in Explorer.
-- - [Set_NetworkProfilesPubPriv](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_NetworkProfilesPubPriv.ps1) - Set Networks to Public or Private.
-- - [Set_ShortcutCreationStyle](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_ShortcutCreationStyle.ps1) - Toggles the appending of "- shortcut" and little arrow icon overlay to shortcuts.
-- - [Set_StartMenuWebSearch](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_StartMenuWebSearch.ps1) - Toggle if Start Menu searches include web results.
-- - [Set_TaskBarIconSizeStyle](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_TaskBarIconSizeStyle.ps1) - Choose Large, Small, combined task bar icon styles.
-- - [Set_TaskBarTaskViewButton](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_TaskBarTaskViewButton.ps1) - Toggle the Task View button on or off.
-- - [Set_WifiSense](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_WifiSense.ps1) - Turn Wifi Sense on or off.
+- [Set_AutoRunAutoPlay](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_AutoRunAutoPlay.ps1) - Toggles for Auto Run and AutoPlay, default is both off.
+- [Set_ControlPanelView](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_ControlPanelView.ps1) - Settings for Control Panel style, large, small icons or category view.
+- [Set_ExplorerThumnails](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_ExplorerThumnails.ps1) - Sets Thumbnail generation / caching.
+- [Set_ExtTypeHiddenFiles](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_ExtTypeHiddenFiles.ps1) - Choose to show/hide extentions & hidden files.
+- [Set_FileExplorerDefaultWindow](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_FileExplorerDefaultWindow.ps1) - Choose if new explorer windows open This PC or Quick Access.
+- [Set_KeyboardLanguage](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_KeyboardLanguage.ps1) - Add / Remove Keyboard Languages (try ENG INTL).
+- [Set_LibraryMusicPicVid3D](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_LibraryMusicPicVid3D.ps1) - Show / Hide Music, Pictures, Videos, 3D Objects Libraries in Explorer.
+- [Set_NetworkProfilesPubPriv](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_NetworkProfilesPubPriv.ps1) - Set Networks to Public or Private.
+- [Set_ShortcutCreationStyle](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_ShortcutCreationStyle.ps1) - Toggles the appending of "- shortcut" and little arrow icon overlay to shortcuts.
+- [Set_StartMenuWebSearch](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_StartMenuWebSearch.ps1) - Toggle if Start Menu searches include web results.
+- [Set_TaskBarIconSizeStyle](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_TaskBarIconSizeStyle.ps1) - Choose Large, Small, combined task bar icon styles.
+- [Set_TaskBarTaskViewButton](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_TaskBarTaskViewButton.ps1) - Toggle the Task View button on or off.
+- [Set_WifiSense](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_WifiSense.ps1) - Turn Wifi Sense on or off.
