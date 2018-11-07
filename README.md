@@ -16,7 +16,7 @@ Manipulate and Report from AD on-Premises.
 
 Who even has on-Premises Exchange these days?
 
-- [ExportPST](https://github.com/thatCraigW/PowerShell/blob/master/Exchange/ExportPST.ps1) - Export PSTs from mailboxes.
+- [ExportPST](https://github.com/thatCraigW/PowerShell/blob/master/Exchange/ExportPST.ps1) - Export PSTs from mailboxes, check progress for big nasty ones.
 
 ## Office 365
 
