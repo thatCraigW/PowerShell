@@ -42,7 +42,7 @@ Powershell Scripts &amp; Snippets
 - - [Set_KeyboardLanguage](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_KeyboardLanguage.ps1) - Add / Remove Keyboard Languages (try ENG INTL).
 - - [Set_LibraryMusicPicVid3D](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_LibraryMusicPicVid3D.ps1) - Show / Hide Music, Pictures, Videos, 3D Objects Libraries in Explorer.
 - - [Set_NetworkProfilesPubPriv](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_NetworkProfilesPubPriv.ps1) - Set Networks to Public or Private.
-- - [Set_ShortcutCreationStyle](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_ShortcutCreationStyle.ps1) - Toggles the appending of "- shortcut" and the little arrow icon overlay to new shortcuts.
+- - [Set_ShortcutCreationStyle](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_ShortcutCreationStyle.ps1) - Toggles the appending of "- shortcut" and little arrow icon overlay to shortcuts.
 - - [Set_StartMenuWebSearch](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_StartMenuWebSearch.ps1) - Toggle if Start Menu searches include web results.
 - - [Set_TaskBarIconSizeStyle](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_TaskBarIconSizeStyle.ps1) - Choose Large, Small, combined task bar icon styles.
 - - [Set_TaskBarTaskViewButton](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_TaskBarTaskViewButton.ps1) - Toggle the Task View button on or off.
