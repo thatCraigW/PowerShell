@@ -2,6 +2,9 @@
 Powershell Scripts &amp; Snippets
 
 ## Active Directory
+
+Manipulate and Report from AD on-Premises.
+
 - [Get_UsersByOU](https://github.com/thatCraigW/PowerShell/blob/master/ActiveDirectory/Get_UsersByOU.ps1) - Search all users within a specific location and get properties, export to csv.
 
 ## Azure
@@ -10,9 +13,15 @@ Powershell Scripts &amp; Snippets
 - [RemoveUser](https://github.com/thatCraigW/PowerShell/blob/master/Azure/RemoveUser.ps1) - Prompts for email before executing Remove-MsolUser command (inc. recycle bin).
 
 ## Exchange
+
+Who even has on-Premises Exchange these days?
+
 - [ExportPST](https://github.com/thatCraigW/PowerShell/blob/master/Exchange/ExportPST.ps1) - Export PSTs from mailboxes.
 
 ## Office 365
+
+Mess with your cloud tenants!
+
 - [Connect_O365](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Connect_O365.ps1) - Prompt for creds, then connect to tenant.
 - [Connect_O365_SfB](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Connect_O365_SfB.ps1) - As above, but for Lync/SfB tenant.
 - [Convert_MailboxToShared](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Convert_MailboxToShared.ps1) - Prompts for account, then converts to shared mailbox.
@@ -24,6 +33,8 @@ Powershell Scripts &amp; Snippets
 - [Wizard_AutoExpandingArchive](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Wizard_AutoExpandingArchive.ps1) - Wizard to audit or set AutoExpandingArchive specific mailbox or tenant.
 
 ## Windows
+
+Day-to-day Windows Commands / Tools.
 
 - [Enable_Scripts](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Enable_Scripts.ps1) - Enables PowerShell scripts to run on the local machine.
 - [Get_FileDownloadAndExecute](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Get_FileDownloadAndExecute.ps1) - Download a file from a URL, then run it (silently).
