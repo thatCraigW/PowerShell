@@ -31,7 +31,7 @@ Powershell Scripts &amp; Snippets
 - [Get_RegistryTestAndSet_Registry](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Get_RegistryTestAndSet_Registry.ps1) - Checks Registry Path exists, creates if it doesnt, and creates a new key.
 - [Get_VPNVerifyConnected](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Get_VPNVerifyConnected.ps1) - Confirms if you're connected to a VPN. It doesn't care which, just that one is live.
 
-### Misc Fresh Build
+### Windows - Misc Fresh Build Scripts
 
 Things to consider for first-logon / automated builds.
 
@@ -49,7 +49,7 @@ Things to consider for first-logon / automated builds.
 - [Set_Telemetry](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_Telemetry.ps1) - Enable / Disable Win10 Telemetry.
 - [Set_TrayIcons](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_TrayIcons.ps1) - Show / Hide all Tray Icons.
 
-### Misc Preferences
+### Windows - Misc Preferences Scripts
 
 Preference Toggles and default app/file associations.
 
