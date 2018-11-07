@@ -37,6 +37,17 @@ Things to consider for first-logon / automated builds.
 
 - [Set_AppSuggestions](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_AppSuggestions.ps1) - Toggle for "Suggested" Apps.
 - [Set_BloatApps](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_BloatApps.ps1) - Toggles for bloat apps like MineCraft UWP etc auto-installing.
+- [Set_FastStartup](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_FastStartup.ps1) - Enable / Disable Fast Startup (stupid hibernate setting).
+- [Set_Hibernation](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_Hibernation.ps1) - Enable / Disable Hibernation.
+- [Set_MSFTEdge](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_MSFTEdge.ps1) - Stop Edge from taking over.
+- [Set_NumlockOnStartup](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_NumlockOnStartup.ps1) - Toggle Numlock on Startup.
+- [Set_PhotoViewer](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_PhotoViewer.ps1) - Associate Photo Viewer.
+- [Set_PinnedIconsTiles](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_PinnedIconsTiles.ps1) - Unpin Start Menu Tiles and Taskbar Icons.
+- [Set_SearchForAppInStore](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_SearchForAppInStore.ps1) - Toggle ability to "search for app in store" at open-with prompt.
+- [Set_TaskBarPeopleButton](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_TaskBarPeopleButton.ps1) - Toggle People Button on the Taskbar.
+- [Set_TaskBarSearchIconBox](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_TaskBarSearchIconBox.ps1) - Choose how cortana/search bar display on the Taskbar.
+- [Set_Telemetry](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_Telemetry.ps1) - Enable / Disable Win10 Telemetry.
+- [Set_TrayIcons](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_TrayIcons.ps1) - Show / Hide all Tray Icons.
 
 ### Misc Preferences
 
@@ -50,6 +61,7 @@ Preference Toggles and default app/file associations.
 - [Set_KeyboardLanguage](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_KeyboardLanguage.ps1) - Add / Remove Keyboard Languages (try ENG INTL).
 - [Set_LibraryMusicPicVid3D](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_LibraryMusicPicVid3D.ps1) - Show / Hide Music, Pictures, Videos, 3D Objects Libraries in Explorer.
 - [Set_NetworkProfilesPubPriv](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_NetworkProfilesPubPriv.ps1) - Set Networks to Public or Private.
+- [Set_ServerManagerOnLogon](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_ServerManagerOnLogon.ps1) - Toggle the Server Manager showing up on logon.
 - [Set_ShortcutCreationStyle](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_ShortcutCreationStyle.ps1) - Toggles the appending of "- shortcut" and little arrow icon overlay to shortcuts.
 - [Set_StartMenuWebSearch](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_StartMenuWebSearch.ps1) - Toggle if Start Menu searches include web results.
 - [Set_TaskBarIconSizeStyle](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_TaskBarIconSizeStyle.ps1) - Choose Large, Small, combined task bar icon styles.
