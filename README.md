@@ -37,7 +37,9 @@ Powershell Scripts &amp; Snippets
 - - [Set_BloatApps](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_BloatApps.ps1) - Toggles for bloat apps like MineCraft UWP etc auto-installing.
 
 ### Misc Preferences
-- [Misc Preferences](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences) - Preference Toggles and default app/file associations.
+
+Preference Toggles and default app/file associations.
+
 - - [Set_AutoRunAutoPlay](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_AutoRunAutoPlay.ps1) - Toggles for Auto Run and AutoPlay, default is both off.
 - - [Set_ControlPanelView](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_ControlPanelView.ps1) - Settings for Control Panel style, large, small icons or category view.
 - - [Set_ExplorerThumnails](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_ExplorerThumnails.ps1) - Sets Thumbnail generation / caching.
