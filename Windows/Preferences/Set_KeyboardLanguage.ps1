@@ -13,5 +13,18 @@ Function RemoveENKeyboard {
 	Set-WinUserLanguageList ($langs | Where-Object {$_.LanguageTag -ne "en-US"}) -Force
 }
 
+# Remove en-INTL keyboard, leave US only
+Function ForceUSONLYKeyboard {
+	Write-Output "Hard Forcing single en-US language with no special keyboards..."
+	Set-WinUserLanguageList -LanguageList en-US -Force
+}
+
+# Remove en-INTL keyboard, leave AU as secondary option
+Function ForceUSandAUKeyboard {
+	Write-Output "Hard Forcing single en-US language with no special keyboards..."
+	Set-WinUserLanguageList -LanguageList en-US, en-AU -Force
+}
 #AddENKeyboard
 #RemoveENKeyboard
+ForceUSONLYKeyboard
+#ForceUSandAUKeyboard

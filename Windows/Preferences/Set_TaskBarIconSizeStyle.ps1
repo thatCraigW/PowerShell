@@ -32,8 +32,8 @@ Function SetTaskbarCombineAlways {
 }
 
 
-ShowSmallTaskbarIcons
-#ShowLargeTaskbarIcons
+#ShowSmallTaskbarIcons
+ShowLargeTaskbarIcons
 #SetTaskbarCombineWhenFull
-SetTaskbarCombineNever
-#SetTaskbarCombineAlways
+#SetTaskbarCombineNever
+SetTaskbarCombineAlways
