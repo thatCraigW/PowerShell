@@ -20,7 +20,7 @@ Powershell Scripts &amp; Snippets
 - [Get_DistributionGroupMembers](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Get_DistributionGroupMembers.ps1) - Loops through ALL DGs and lists every member of each DG.
 - [Get_MailboxLimits](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Get_MailboxLimits.ps1) - Retrieves full stats on a mailbox.
 - [Get_MailboxStats](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Get_MailboxStats.ps1) - Retrieves full stats on many (ALL) mailboxes.
-- [MailboxDelegations](https://github.com/thatCraigW/PowerShell/blob/master/Office365/MailboxDelegations.ps1) - Send As, Full Access and Send on Behalf commands.
+- [Set_MailboxDelegations](https://github.com/thatCraigW/PowerShell/blob/master/Office365/MailboxDelegations.ps1) - Send As, Full Access and Send on Behalf commands.
 - [Wizard_AutoExpandingArchive](https://github.com/thatCraigW/PowerShell/blob/master/Office365/Wizard_AutoExpandingArchive.ps1) - Wizard to audit or set AutoExpandingArchive specific mailbox or tenant.
 
 ## Windows
