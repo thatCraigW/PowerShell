@@ -31,10 +31,12 @@ Powershell Scripts &amp; Snippets
 - [Get_RegistryTestAndSet_Registry](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Get_RegistryTestAndSet_Registry.ps1) - Checks Registry Path exists, creates if it doesnt, and creates a new key.
 - [Get_VPNVerifyConnected](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Get_VPNVerifyConnected.ps1) - Confirms if you're connected to a VPN. It doesn't care which, just that one is live.
 
+### Misc Fresh Build
 - [Misc FreshBuild](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild) - Things to consider for first-logon / automated builds.
 - - [Set_AppSuggestions](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_AppSuggestions.ps1) - Toggle for "Suggested" Apps.
 - - [Set_BloatApps](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_BloatApps.ps1) - Toggles for bloat apps like MineCraft UWP etc auto-installing.
 
+### Misc Preferences
 - [Misc Preferences](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences) - Preference Toggles and default app/file associations.
 - - [Set_AutoRunAutoPlay](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_AutoRunAutoPlay.ps1) - Toggles for Auto Run and AutoPlay, default is both off.
 - - [Set_ControlPanelView](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_ControlPanelView.ps1) - Settings for Control Panel style, large, small icons or category view.
