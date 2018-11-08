@@ -2,6 +2,10 @@
 # default setting is Restricted
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
 
+# Sets Script to RunOnce
+$RunOnceKey = "HKLM:\Software\Microsoft\Windows\CurrentVersion\RunOnce"
+Set-ItemProperty -Path $RunOnceKey -Name 'NextRun' -Value 'C:\Windows\System32\WindowsPowerShell\v1.0\Powershell.exe -executionpolicy Bypass -windowstyle hidden -File "C:\Windows\Resources\AIO_DeBloater.ps1" '
+
 # Show all tray icons
 Function ShowTrayIcons {
 	Write-Output "Showing all tray icons..."
