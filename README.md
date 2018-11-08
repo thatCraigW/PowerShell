@@ -46,6 +46,7 @@ Day-to-day Windows Commands / Tools.
 
 Things to consider for first-logon / automated builds.
 
+- [AIO_DeBloater](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/AIO_DeBloater.ps1) - Master "RunOnce" script, starts by enabling PowerShell.
 - [Set_AppSuggestions](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_AppSuggestions.ps1) - Toggle for "Suggested" Apps.
 - [Set_BloatApps](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_BloatApps.ps1) - Toggles for bloat apps like MineCraft UWP etc auto-installing.
 - [Set_FastStartup](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_FastStartup.ps1) - Enable / Disable Fast Startup (stupid hibernate setting).

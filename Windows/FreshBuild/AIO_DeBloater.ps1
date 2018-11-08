@@ -1,3 +1,7 @@
+# Enable PowerShell Scripts to get this baby started
+# default setting is Restricted
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+
 # Show all tray icons
 Function ShowTrayIcons {
 	Write-Output "Showing all tray icons..."
@@ -888,3 +892,7 @@ HideTaskView
 
 #DisableRemoteDesktop
 EnableRemoteDesktop
+
+
+# Restart Explorer to see the changes in effect
+Stop-Process -ProcessName explorer
