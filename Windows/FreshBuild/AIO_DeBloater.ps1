@@ -887,8 +887,8 @@ ShowLargeTaskbarIcons
 #SetTaskbarCombineNever
 SetTaskbarCombineAlways
 
-HideTaskView
-#ShowTaskView
+#HideTaskView
+ShowTaskView
 
 #DisableRemoteDesktop
 EnableRemoteDesktop
