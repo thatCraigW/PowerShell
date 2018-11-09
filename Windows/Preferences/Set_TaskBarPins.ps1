@@ -1,0 +1,1 @@
+# MSFT removed the ability to place these consistently, recommended practice is now to use GP via AD or Azure AD

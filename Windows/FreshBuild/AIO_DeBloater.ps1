@@ -2,10 +2,6 @@
 # default setting is Restricted
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
 
-# Sets Script to RunOnce
-$RunOnceKey = "HKLM:\Software\Microsoft\Windows\CurrentVersion\RunOnce"
-Set-ItemProperty -Path $RunOnceKey -Name 'NextRun' -Value 'C:\Windows\System32\WindowsPowerShell\v1.0\Powershell.exe -executionpolicy Bypass -windowstyle hidden -File "C:\Windows\Resources\AIO_DeBloater.ps1" '
-
 # Show all tray icons
 Function ShowTrayIcons {
 	Write-Output "Showing all tray icons..."
@@ -872,6 +868,63 @@ Function RemovePhotoViewerOpenWith {
 	Remove-Item -Path "HKCR:\Applications\photoviewer.dll\shell\open" -Recurse -ErrorAction SilentlyContinue
 }
 
+function Pin-App { 
+    param(
+        [string]$appname,
+        [switch]$unpin
+    )
+    try{
+        if ($unpin.IsPresent){
+            ((New-Object -Com Shell.Application).NameSpace('shell:::{4234d49b-0245-4df3-b780-3893943456e1}').Items() | ?{$_.Name -eq $appname}).Verbs() | ?{$_.Name.replace('&','') -match 'From "Start" UnPin|Unpin from Start'} | %{$_.DoIt()}
+            return "App '$appname' unpinned from Start"
+        }else{
+            ((New-Object -Com Shell.Application).NameSpace('shell:::{4234d49b-0245-4df3-b780-3893943456e1}').Items() | ?{$_.Name -eq $appname}).Verbs() | ?{$_.Name.replace('&','') -match 'To "Start" Pin|Pin to Start'} | %{$_.DoIt()}
+            return "App '$appname' pinned to Start"
+        }
+    }catch{
+        Write-Error "Error Pinning/Unpinning App! (App-Name correct?)"
+    }
+}
+Function SetDeBloaterToRunOnce {
+    # HAY WHAT WE DOING?
+    Write-Host "Attempting to mount default registry hive"
+
+    # Apparently we're loading a registry hive, the default user in fact!
+    & REG LOAD HKLM\DEFAULT C:\Users\Default\NTUSER.DAT
+
+    # Oh and we're checking if a path exists
+    $subfolderTest = Test-Path "HKLM:\DEFAULT\Software\Microsoft\Windows\CurrentVersion\RunOnce"
+
+    # And then creating it, if it doesn't
+    if (-NOT ($subfolderTest -eq "True")) 
+    {
+        New-Item -Path "HKLM:\DEFAULT\Software\Microsoft\Windows\CurrentVersion" -Name "Runonce"
+    }
+
+    # Oh and then we're messing with the RunOnce key, so the first time users log on something runs... once...
+    $RunOnceKey = "HKLM:\DEFAULT\Software\Microsoft\Windows\CurrentVersion\RunOnce"
+    Set-ItemProperty -Path $RunOnceKey -Name 'NextRun' -Value 'C:\Windows\System32\WindowsPowerShell\v1.0\Powershell.exe -executionpolicy Bypass -windowstyle hidden -File "C:\Windows\Resources\AIO_DeBloater.ps1" '
+
+    # Here we set vars for a while loop
+    $unloaded = $false
+    $attempts = 0
+
+    # Wile loop tries to unload the hive, up to 5 times in case it lags
+    while (!$unloaded -and ($attempts -le 5)) {
+    [gc]::Collect() # necessary call to be able to unload registry hive
+    & REG UNLOAD HKLM\DEFAULT
+    $unloaded = $?
+    $attempts += 1
+    }
+
+    # If its still not unloaded, spit out an error message
+    if (!$unloaded) {
+        Write-Warning "Unable to dismount default user registry hive at HKLM\DEFAULT - manual dismount required"
+    }
+
+    # WE DONE HERE
+}
+
 DisableSearchAppInStore
 #EnableSearchAppInStore
 DisableNewAppPrompt
@@ -971,6 +1024,21 @@ EnableWin7PhotoViewer
 #UnsetPhotoViewerAssociation
 #AddPhotoViewerOpenWith
 #RemotePhotoViewerOpenWith
+
+SetDeBloaterToRunOnce
+
+# Start pinning stuff
+Pin-App "Outlook"
+Pin-App "Outlook 2016"          # Sometimes even on ProPlus these say 2016 for a while before changing to proper name
+Pin-App "Word"
+Pin-App "Word 2016"             # Sometimes even on ProPlus these say 2016 for a while before changing to proper name
+Pin-App "Internet Explorer"
+Pin-App "Excel"
+Pin-App "Excel 2016"            # Sometimes even on ProPlus these say 2016 for a while before changing to proper name
+Pin-App "PowerPoint"
+Pin-App "PowerPoint 2016"       # Sometimes even on ProPlus these say 2016 for a while before changing to proper name
+Pin-App "Google Chrome"
+Pin-App "This PC"
 
 # Restart Explorer to see the changes in effect
 Stop-Process -ProcessName explorer
