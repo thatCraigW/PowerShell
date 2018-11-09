@@ -922,11 +922,6 @@ Function SetDeBloaterToRunOnce {
     # WE DONE HERE
 }
 
-DisableSearchAppInStore
-#EnableSearchAppInStore
-DisableNewAppPrompt
-#EnableNewAppPrompt
-
 #ShowTrayIcons
 HideTrayIcons
 
@@ -939,6 +934,11 @@ HideTaskbarSearch
 
 HideTaskbarPeopleIcon
 #ShowTaskbarPeopleIcon
+
+DisableSearchAppInStore
+#EnableSearchAppInStore
+DisableNewAppPrompt
+#EnableNewAppPrompt
 
 UnpinStartMenuTiles
 UnpinTaskbarIcons
