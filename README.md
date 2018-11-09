@@ -55,7 +55,9 @@ Things to consider for first-logon / automated builds.
 - [Set_NumlockOnStartup](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_NumlockOnStartup.ps1) - Toggle Numlock on Startup.
 - [Set_PhotoViewer](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_PhotoViewer.ps1) - Associate Photo Viewer.
 - [Set_PinnedIconsTiles](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_PinnedIconsTiles.ps1) - Unpin Start Menu Tiles and Taskbar Icons.
+- [Set_RunOnce](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_RunOnce.ps1) - Open the default user hive, edit runonce and save & close it.
 - [Set_SearchForAppInStore](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_SearchForAppInStore.ps1) - Toggle ability to "search for app in store" at open-with prompt.
+- [Set_ServerManagerOnLogon](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_ServerManagerOnLogon.ps1) - Choose whether this pops up or not on servers.
 - [Set_TaskBarPeopleButton](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_TaskBarPeopleButton.ps1) - Toggle People Button on the Taskbar.
 - [Set_TaskBarSearchIconBox](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_TaskBarSearchIconBox.ps1) - Choose how cortana/search bar display on the Taskbar.
 - [Set_Telemetry](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_Telemetry.ps1) - Enable / Disable Win10 Telemetry.
@@ -73,9 +75,11 @@ Preference Toggles and default app/file associations.
 - [Set_KeyboardLanguage](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_KeyboardLanguage.ps1) - Add / Remove Keyboard Languages (try ENG INTL).
 - [Set_LibraryMusicPicVid3D](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_LibraryMusicPicVid3D.ps1) - Show / Hide Music, Pictures, Videos, 3D Objects Libraries in Explorer.
 - [Set_NetworkProfilesPubPriv](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_NetworkProfilesPubPriv.ps1) - Set Networks to Public or Private.
-- [Set_ServerManagerOnLogon](https://github.com/thatCraigW/PowerShell/blob/master/Windows/FreshBuild/Set_ServerManagerOnLogon.ps1) - Toggle the Server Manager showing up on logon.
 - [Set_ShortcutCreationStyle](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_ShortcutCreationStyle.ps1) - Toggles the appending of "- shortcut" and little arrow icon overlay to shortcuts.
+- [Set_StartMenuPins](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_StartMenuPins.ps1) - Pin items to start menu based on name.
 - [Set_StartMenuWebSearch](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_StartMenuWebSearch.ps1) - Toggle if Start Menu searches include web results.
 - [Set_TaskBarIconSizeStyle](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_TaskBarIconSizeStyle.ps1) - Choose Large, Small, combined task bar icon styles.
+- [Set_TaskBarPins](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_TaskBarPins.ps1) - Currently disabled/obfuscated by MSFT.
 - [Set_TaskBarTaskViewButton](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_TaskBarTaskViewButton.ps1) - Toggle the Task View button on or off.
 - [Set_WifiSense](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_WifiSense.ps1) - Turn Wifi Sense on or off.
+- [Set_Windows7PhotoViewer](https://github.com/thatCraigW/PowerShell/blob/master/Windows/Preferences/Set_Windows7PhotoViewer.ps1) - Properly unlocks this in open-with, doesn't set as default (yet).
