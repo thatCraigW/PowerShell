@@ -6,6 +6,7 @@ Powershell Scripts &amp; Snippets
 Manipulate and Report from AD on-Premises.
 
 - [Get_UsersByOU](https://github.com/thatCraigW/PowerShell/blob/master/ActiveDirectory/Get_UsersByOU.ps1) - Search all users within a specific location and get properties, export to csv.
+- [Set_ADUserPropertiesFromCSV](https://github.com/thatCraigW/PowerShell/blob/master/ActiveDirectory/Set_ADUserPropertiesFromCSV.ps1) - Import CSV file, get current properties, set to new property - compare changes.
 
 ## Azure
 - [Connect_Azure](https://github.com/thatCraigW/PowerShell/blob/master/Azure/Connect_Azure.ps1) - Does what it says on the box.
