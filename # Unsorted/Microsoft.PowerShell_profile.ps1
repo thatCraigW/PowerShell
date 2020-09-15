@@ -1,3 +1,6 @@
+# Current Version
+  $profileVersion = "v0.1a"
+
 # Set default directory
   Set-Location C:\
 
@@ -348,6 +351,8 @@ function speedtest {
   Write-Host $host.Version.Major -ForegroundColor DarkCyan
   Write-Host "Your computer name is: " -NoNewLine
   Write-Host (Get-ChildItem Env:\COMPUTERNAME).Value -ForegroundColor DarkCyan
+  Write-Host "Your profile version is: " -NoNewLine
+  Write-Host $profileVersion -ForegroundColor DarkCyan
   Write-Host "Your IP(s): " -NoNewLine
   Write-Host $ipAddresses -ForegroundColor DarkCyan
   Write-Host "Public IP: " -NoNewLine
