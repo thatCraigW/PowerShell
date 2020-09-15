@@ -77,13 +77,13 @@ function help {
 ## Replaces the existing windows powershell profile with latest one from github
 function update {
 
-  $latestURL      =   "https://raw.githubusercontent.com/thatCraigW/PowerShell/master/%23%20Unsorted/Microsoft.PowerShell_profile.ps1"
+  $latestURL = "https://raw.githubusercontent.com/thatCraigW/PowerShell/master/%23%20Unsorted/Microsoft.PowerShell_profile.ps1"
 
   # Is it already set up, if so just update it
     if ( Test-Path "$env:OneDriveCommercial\Documents\WindowsPowerShell" ) { 
       Remove-Item -Path "$env:OneDriveCommercial\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" -force -ErrorAction SilentlyContinue
       [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-      Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:OneDriveCommercial\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" -force
+      Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:OneDriveCommercial\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
       Write-Host "Re-Loading Profile..."
       Start-Sleep (2)
         .$profile
