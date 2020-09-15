@@ -74,7 +74,7 @@ function help {
 ## Replaces the existing windows powershell profile with latest one from github
 function update {
 
-  $latestURL      =   "https://github.com/thatCraigW/WindowsDrivers/raw/master/ookla-speedtest-1.0.0-win64/speedtest.exe"
+  $latestURL      =   "https://raw.githubusercontent.com/thatCraigW/PowerShell/master/%23%20Unsorted/Microsoft.PowerShell_profile.ps1"
 
   # Is it already set up, if so just update it
     if ( Test-Path "$env:OneDriveCommercial\Documents\WindowsPowerShell" ) { 
