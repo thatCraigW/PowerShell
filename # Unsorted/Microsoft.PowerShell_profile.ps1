@@ -1,5 +1,5 @@
 # Current Version
-  $profileVersion = "v0.1a"
+  $profileVersion = "v0.1b"
 
 # Set default directory
   Set-Location C:\
@@ -82,7 +82,7 @@ function update {
   # Is it already set up, if so just update it
     if ( Test-Path "$env:OneDriveCommercial\Documents\WindowsPowerShell" ) { 
       [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-      Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:OneDriveCommercial\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
+      Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:OneDriveCommercial\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" -force
       Write-Host "Re-Loading Profile..."
       Start-Sleep (2)
         .$profile
