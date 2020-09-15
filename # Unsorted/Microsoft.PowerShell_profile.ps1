@@ -1,5 +1,5 @@
 # Current Version
-  $profileVersion = "v0.1d"
+  $profileVersion = "v0.1f"
 
 # Set default directory
   Set-Location C:\
@@ -365,6 +365,7 @@ function speedtest {
   Write-Host "+ Type  " -NoNewLine
   Write-Host "help" -NoNewLine -ForegroundColor Yellow
   Write-Host "  to view built-in commands & helpers +"
+  Write-Host " "
   
 
 # Formatting the window & line prompt with date / style
