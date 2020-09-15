@@ -80,11 +80,17 @@ function update {
     if ( Test-Path "$env:OneDriveCommercial\Documents\WindowsPowerShell" ) { 
       [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
       Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:OneDriveCommercial\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
+      Write-Host "Re-Loading Profile..."
+      Start-Sleep (2)
+        .$profile
 
     # else is it just set up elsewhere?  
       } elseif ( Test-Path "$env:USERPROFILE\Documents\WindowsPowerShell" ) { 
         [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
         Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:USERPROFILE\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
+        Write-Host "Re-Loading Profile..."
+        Start-Sleep (2)
+          .$profile
 
     # ok, couldn't find it, are they known-folder redirected? Download and run it there
       } elseif ( Test-Path "$env:OneDriveCommercial\Documents" ) { 
