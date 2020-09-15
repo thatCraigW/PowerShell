@@ -81,6 +81,7 @@ function update {
 
   # Is it already set up, if so just update it
     if ( Test-Path "$env:OneDriveCommercial\Documents\WindowsPowerShell" ) { 
+      Remove-Item -Path "$env:OneDriveCommercial\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" -force -ErrorAction SilentlyContinue
       [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
       Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:OneDriveCommercial\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" -force
       Write-Host "Re-Loading Profile..."
@@ -89,6 +90,7 @@ function update {
 
     # else is it just set up elsewhere?  
       } elseif ( Test-Path "$env:USERPROFILE\Documents\WindowsPowerShell" ) { 
+        Remove-Item -Path "$env:USERPROFILE\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" -force -ErrorAction SilentlyContinue
         [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
         Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:USERPROFILE\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
         Write-Host "Re-Loading Profile..."
@@ -110,6 +112,7 @@ function update {
         Write-Host '03 of 04' -ForegroundColor White -NoNewline
         Write-Host ']: ' -NoNewline
         Write-Host "Acquiring latest version from github"
+          Remove-Item -Path "$env:OneDriveCommercial\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" -force -ErrorAction SilentlyContinue
           [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
           Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:OneDriveCommercial\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
         Write-Host '  [' -NoNewline
@@ -134,6 +137,7 @@ function update {
         Write-Host '03 of 04' -ForegroundColor White -NoNewline
         Write-Host ']: ' -NoNewline
         Write-Host "Acquiring latest version from github"
+          Remove-Item -Path "$env:USERPROFILE\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" -force -ErrorAction SilentlyContinue
           [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
           Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:USERPROFILE\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
         Write-Host '  [' -NoNewline
