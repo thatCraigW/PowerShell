@@ -1,5 +1,5 @@
 # Current Version
-  $profileVersion = "v0.1f"
+  $profileVersion = "v0.1c"
 
 # Set default directory
   Set-Location C:\
