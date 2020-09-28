@@ -1,5 +1,5 @@
 # Current Version
-  $profileVersion = "v0.1f"
+$profileVersion = "v0.1g"
 
 # Set default directory
   Set-Location C:\
@@ -77,22 +77,24 @@ function help {
 ## Replaces the existing windows powershell profile with latest one from github
 function update {
 
-  $latestURL = "https://raw.githubusercontent.com/thatCraigW/PowerShell/master/%23%20Unsorted/Microsoft.PowerShell_profile.ps1"
+  $profileType  = "Microsoft.PowerShell_profile.ps1"
+  $profileURL   = "https://raw.githubusercontent.com/thatCraigW/PowerShell/master/%23%20Unsorted/"
+  $latestURL    = "$profileURL$profileType"
 
   # Is it already set up, if so just update it
     if ( Test-Path "$env:OneDriveCommercial\Documents\WindowsPowerShell" ) { 
-      Remove-Item -Path "$env:OneDriveCommercial\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" -force -ErrorAction SilentlyContinue
+      Remove-Item -Path "$env:OneDriveCommercial\Documents\WindowsPowerShell\$profileType" -force -ErrorAction SilentlyContinue
       [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-      Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:OneDriveCommercial\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
+      Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:OneDriveCommercial\Documents\WindowsPowerShell\$profileType"
       Write-Host "Re-Loading Profile..."
       Start-Sleep (2)
         .$profile
 
     # else is it just set up elsewhere?  
       } elseif ( Test-Path "$env:USERPROFILE\Documents\WindowsPowerShell" ) { 
-        Remove-Item -Path "$env:USERPROFILE\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" -force -ErrorAction SilentlyContinue
+        Remove-Item -Path "$env:USERPROFILE\Documents\WindowsPowerShell\$profileType" -force -ErrorAction SilentlyContinue
         [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-        Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:USERPROFILE\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
+        Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:USERPROFILE\Documents\WindowsPowerShell\$profileType"
         Write-Host "Re-Loading Profile..."
         Start-Sleep (2)
           .$profile
@@ -112,9 +114,9 @@ function update {
         Write-Host '03 of 04' -ForegroundColor White -NoNewline
         Write-Host ']: ' -NoNewline
         Write-Host "Acquiring latest version from github"
-          Remove-Item -Path "$env:OneDriveCommercial\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" -force -ErrorAction SilentlyContinue
+          Remove-Item -Path "$env:OneDriveCommercial\Documents\WindowsPowerShell\$profileType" -force -ErrorAction SilentlyContinue
           [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-          Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:OneDriveCommercial\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
+          Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:OneDriveCommercial\Documents\WindowsPowerShell\$profileType"
         Write-Host '  [' -NoNewline
         Write-Host '04 of 04' -ForegroundColor White -NoNewline
         Write-Host ']: ' -NoNewline
@@ -137,9 +139,9 @@ function update {
         Write-Host '03 of 04' -ForegroundColor White -NoNewline
         Write-Host ']: ' -NoNewline
         Write-Host "Acquiring latest version from github"
-          Remove-Item -Path "$env:USERPROFILE\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" -force -ErrorAction SilentlyContinue
+          Remove-Item -Path "$env:USERPROFILE\Documents\WindowsPowerShell\$profileType" -force -ErrorAction SilentlyContinue
           [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-          Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:USERPROFILE\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
+          Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:USERPROFILE\Documents\WindowsPowerShell\$profileType"
         Write-Host '  [' -NoNewline
         Write-Host '04 of 04' -ForegroundColor White -NoNewline
         Write-Host ']: ' -NoNewline
