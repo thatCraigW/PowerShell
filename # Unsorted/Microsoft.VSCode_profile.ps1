@@ -1,5 +1,5 @@
 # Current Version
-  $profileVersion = "v0.1c"
+  $profileVersion = "v0.1f"
 
 # Set default directory
   Set-Location C:\
@@ -81,18 +81,18 @@ function update {
 
   # Is it already set up, if so just update it
     if ( Test-Path "$env:OneDriveCommercial\Documents\WindowsPowerShell" ) { 
-      Remove-Item -Path "$env:OneDriveCommercial\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" -force -ErrorAction SilentlyContinue
+      Remove-Item -Path "$env:OneDriveCommercial\Documents\WindowsPowerShell\Microsoft.VSCode_profile.ps1" -force -ErrorAction SilentlyContinue
       [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-      Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:OneDriveCommercial\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
+      Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:OneDriveCommercial\Documents\WindowsPowerShell\Microsoft.VSCode_profile.ps1"
       Write-Host "Re-Loading Profile..."
       Start-Sleep (2)
         .$profile
 
     # else is it just set up elsewhere?  
       } elseif ( Test-Path "$env:USERPROFILE\Documents\WindowsPowerShell" ) { 
-        Remove-Item -Path "$env:USERPROFILE\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" -force -ErrorAction SilentlyContinue
+        Remove-Item -Path "$env:USERPROFILE\Documents\WindowsPowerShell\Microsoft.VSCode_profile.ps1" -force -ErrorAction SilentlyContinue
         [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-        Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:USERPROFILE\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
+        Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:USERPROFILE\Documents\WindowsPowerShell\Microsoft.VSCode_profile.ps1"
         Write-Host "Re-Loading Profile..."
         Start-Sleep (2)
           .$profile
@@ -112,9 +112,9 @@ function update {
         Write-Host '03 of 04' -ForegroundColor White -NoNewline
         Write-Host ']: ' -NoNewline
         Write-Host "Acquiring latest version from github"
-          Remove-Item -Path "$env:OneDriveCommercial\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" -force -ErrorAction SilentlyContinue
+          Remove-Item -Path "$env:OneDriveCommercial\Documents\WindowsPowerShell\Microsoft.VSCode.ps1" -force -ErrorAction SilentlyContinue
           [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-          Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:OneDriveCommercial\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
+          Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:OneDriveCommercial\Documents\WindowsPowerShell\Microsoft.VSCode.ps1"
         Write-Host '  [' -NoNewline
         Write-Host '04 of 04' -ForegroundColor White -NoNewline
         Write-Host ']: ' -NoNewline
@@ -137,9 +137,9 @@ function update {
         Write-Host '03 of 04' -ForegroundColor White -NoNewline
         Write-Host ']: ' -NoNewline
         Write-Host "Acquiring latest version from github"
-          Remove-Item -Path "$env:USERPROFILE\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" -force -ErrorAction SilentlyContinue
+          Remove-Item -Path "$env:USERPROFILE\Documents\WindowsPowerShell\Microsoft.VSCode_profile.ps1" -force -ErrorAction SilentlyContinue
           [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-          Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:USERPROFILE\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
+          Invoke-WebRequest -Uri "$latestURL" -OutFile "$env:USERPROFILE\Documents\WindowsPowerShell\Microsoft.VSCode_profile.ps1"
         Write-Host '  [' -NoNewline
         Write-Host '04 of 04' -ForegroundColor White -NoNewline
         Write-Host ']: ' -NoNewline
