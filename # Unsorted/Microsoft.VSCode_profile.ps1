@@ -1,5 +1,5 @@
 # Current Version
-  $profileVersion = "v0.1g"
+  $profileVersion = "v0.1h"
 
 # Set default directory
   Set-Location C:\
@@ -14,6 +14,7 @@
 ## Format the list to be separated by a comma and trailing space
   $ipAddresses = $ipAddresses -join ", "
 ## Public IP
+  [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
   $ipAddressPublic = (Invoke-WebRequest -uri "http://ifconfig.me/ip").Content
 
 ## Get today's date on reverse chron order (year, month, date) for sorting files
@@ -312,6 +313,7 @@ function speedtest {
         Write-Host '03 of 04' -ForegroundColor White -NoNewline
         Write-Host ']: ' -NoNewline
         Write-Host "Acquiring Speedtest command-line files as they don't exist"
+          [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
           wget "$URLSpeedtestEXE" -outfile "$env:OneDriveCommercial\Documents\WindowsPowerShell\ookla-speedtest-1.0.0-win64\speedtest.exe"
           wget "$URLSpeedtestMD" -outfile "$env:OneDriveCommercial\Documents\WindowsPowerShell\ookla-speedtest-1.0.0-win64\speedtest.MD"
         Write-Host '  [' -NoNewline
@@ -335,6 +337,7 @@ function speedtest {
         Write-Host '03 of 04' -ForegroundColor White -NoNewline
         Write-Host ']: ' -NoNewline
         Write-Host "Acquiring Speedtest command-line files as they don't exist"...""
+          [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
           wget "$URLSpeedtestEXE" -outfile "$env:USERPROFILE\Documents\WindowsPowerShell\ookla-speedtest-1.0.0-win64\speedtest.exe"
           wget "$URLSpeedtestMD" -outfile "$env:USERPROFILE\Documents\WindowsPowerShell\ookla-speedtest-1.0.0-win64\speedtest.MD"
         Write-Host '  [' -NoNewline
