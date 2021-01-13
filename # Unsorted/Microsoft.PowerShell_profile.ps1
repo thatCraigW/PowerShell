@@ -1,5 +1,5 @@
 # Current Version
-  $profileVersion = "v0.1h"
+  $profileVersion = "v2021.01"
 
 # Set default directory
   Set-Location C:\
@@ -21,58 +21,6 @@
   $todaysDate = Get-Date -UFormat "%Y-%m-%d"
 
 # Functions Below
-
-## Notepad++ vs Notepad
-function np {
-
-  if ( Test-Path 'C:\Program Files\Notepad++' ) { 
-    & "C:\Program Files\Notepad++\notepad++.exe"
-  } elseif ( Test-Path 'C:\Program Files (x86)\Notepad++' ) { 
-    & "C:\Program Files (x86)\Notepad++\notepad++.exe"
-  } else { 
-    & "C:\Windows\System32\notepad.exe"
-  }
-
-}
-
-## Help Display
-function help {
-  Write-Host "Current Commands:"
-  Write-Host "+ " -NoNewLine
-  Write-Host "help" -NoNewLine -ForegroundColor Yellow
-  Write-Host "        = Displays this menu"
-  Write-Host "+ " -NoNewLine
-  Write-Host "update" -NoNewLine -ForegroundColor Yellow
-  Write-Host "      = Updates this profile with the latest version from CraigW's github"
-  Write-Host "+ " -NoNewLine
-  Write-Host "aads" -NoNewLine -ForegroundColor Yellow
-  Write-Host "        = Performs AzureAD Connect Delta Sync"
-  Write-Host "+ " -NoNewLine
-  Write-Host "np" -NoNewLine -ForegroundColor Yellow
-  Write-Host "          = Opens Notepad++ if available, Notepad if not"
-  Write-Host "+ " -NoNewLine
-  Write-Host "pw" -NoNewLine -ForegroundColor Yellow
-  Write-Host "          = Generates a basic user password (Easy to read)"
-  Write-Host "+ " -NoNewLine
-  Write-Host "spw" -NoNewLine -ForegroundColor Yellow
-  Write-Host "         = Generates a secure user password (More Secure, but not complex)"
-  Write-Host "+ " -NoNewLine
-  Write-Host "cpw" -NoNewLine -ForegroundColor Yellow
-  Write-Host "         = Generates a complex user password (12 characters, complex)"
-  Write-Host "+ " -NoNewLine
-  Write-Host "sudo" -NoNewLine -ForegroundColor Yellow
-  Write-Host "        = Opens an elevated (admin) PowerShell window"
-  Write-Host "+ " -NoNewLine
-  Write-Host "speedtest" -NoNewLine -ForegroundColor Yellow
-  Write-Host "   = Runs a command-line speed test"
-  Write-Host "+ " -NoNewLine
-  Write-Host "wol" -NoNewLine -ForegroundColor Yellow
-  Write-Host "         = Prompts for MAC to Wake On LAN"
-  Write-Host "+ " -NoNewLine
-  Write-Host "immutable" -NoNewLine -ForegroundColor Yellow
-  Write-Host "   = Prompts for UPN to set immutable ID to null"
-  Write-Host " "
-}
 
 
 ## Replaces the existing windows powershell profile with latest one from github
@@ -151,6 +99,60 @@ function update {
           .$profile
       }
 }
+
+## Notepad++ vs Notepad
+function np {
+
+  if ( Test-Path 'C:\Program Files\Notepad++' ) { 
+    & "C:\Program Files\Notepad++\notepad++.exe"
+  } elseif ( Test-Path 'C:\Program Files (x86)\Notepad++' ) { 
+    & "C:\Program Files (x86)\Notepad++\notepad++.exe"
+  } else { 
+    & "C:\Windows\System32\notepad.exe"
+  }
+
+}
+
+## Help Display
+function help {
+  Write-Host "Current Commands:"
+  Write-Host "+ " -NoNewLine
+  Write-Host "help" -NoNewLine -ForegroundColor Yellow
+  Write-Host "        = Displays this menu"
+  Write-Host "+ " -NoNewLine
+  Write-Host "update" -NoNewLine -ForegroundColor Yellow
+  Write-Host "      = Updates this profile with the latest version from CraigW's github"
+  Write-Host "+ " -NoNewLine
+  Write-Host "aads" -NoNewLine -ForegroundColor Yellow
+  Write-Host "        = Performs AzureAD Connect Delta Sync"
+  Write-Host "+ " -NoNewLine
+  Write-Host "np" -NoNewLine -ForegroundColor Yellow
+  Write-Host "          = Opens Notepad++ if available, Notepad if not"
+  Write-Host "+ " -NoNewLine
+  Write-Host "pw" -NoNewLine -ForegroundColor Yellow
+  Write-Host "          = Generates a basic user password (Easy to read)"
+  Write-Host "+ " -NoNewLine
+  Write-Host "spw" -NoNewLine -ForegroundColor Yellow
+  Write-Host "         = Generates a secure user password (More Secure, but not complex)"
+  Write-Host "+ " -NoNewLine
+  Write-Host "cpw" -NoNewLine -ForegroundColor Yellow
+  Write-Host "         = Generates a complex user password (12 characters, complex)"
+  Write-Host "+ " -NoNewLine
+  Write-Host "sudo" -NoNewLine -ForegroundColor Yellow
+  Write-Host "        = Opens an elevated (admin) PowerShell window"
+  Write-Host "+ " -NoNewLine
+  Write-Host "speedtest" -NoNewLine -ForegroundColor Yellow
+  Write-Host "   = Runs a command-line speed test"
+  Write-Host "+ " -NoNewLine
+  Write-Host "wol" -NoNewLine -ForegroundColor Yellow
+  Write-Host "         = Prompts for MAC to Wake On LAN"
+  Write-Host "+ " -NoNewLine
+  Write-Host "immutable" -NoNewLine -ForegroundColor Yellow
+  Write-Host "   = Prompts for UPN to set immutable ID to null"
+  Write-Host " "
+}
+
+
 
 ## AD Sync
 function aads {
@@ -351,6 +353,18 @@ function speedtest {
 # Set up the logging of our files, sorted per day
   #Start-Transcript -Path "$env:OneDriveCommercial\Documents\WindowsPowerShell\$todaysDate Transcript-Windows.txt" -Append
   ## Maybe don't do this, it doesn't seem to print out nicely; there must be a better way !
+
+# Auto-Update profile if more than 30 days old 
+  ## I've put in the hours and minutes here if you really want to tweak more specifically, but they're not required. 
+  ## You can just end it at AddDays(-30) if you like ¯\_(ツ)_/¯
+  if (Test-Path $profile -OlderThan (Get-Date).AddDays(-30).AddHours(-1).AddMinutes(-1)) {
+        # older
+        Write-Host "yep dis old"
+        update
+    } else {
+        # newer
+        Write-Host "nah this not too old"
+    }
 
 # Hide the on-screen output of those commands for neatness
   Clear-Host
