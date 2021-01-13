@@ -1,5 +1,5 @@
 # Current Version
-  $profileVersion = "v0.1h"
+  $profileVersion = "v2021.01"
 
 # Set default directory
   Set-Location C:\
@@ -351,6 +351,18 @@ function speedtest {
 # Set up the logging of our files, sorted per day
   #Start-Transcript -Path "$env:OneDriveCommercial\Documents\WindowsPowerShell\$todaysDate Transcript-Windows.txt" -Append
   ## Maybe don't do this, it doesn't seem to print out nicely; there must be a better way !
+
+# Auto-Update profile if more than 30 days old 
+  ## I've put in the hours and minutes here if you really want to tweak more specifically, but they're not required. 
+  ## You can just end it at AddDays(-30) if you like ¯\_(ツ)_/¯
+  if (Test-Path $profile -OlderThan (Get-Date).AddDays(-30).AddHours(-1).AddMinutes(-1)) {
+      # older
+      Write-Host "yep dis old"
+      update
+  } else {
+      # newer
+      Write-Host "nah this not too old"
+  }
 
 # Hide the on-screen output of those commands for neatness
   Clear-Host
