@@ -294,11 +294,11 @@ function speedtest {
 
   # Is it already set up, if so just run it
     if ( Test-Path "$env:OneDriveCommercial\Documents\WindowsPowerShell\ookla-speedtest-1.0.0-win64" ) { 
-      & "$env:OneDriveCommercial\Documents\WindowsPowerShell\ookla-speedtest-1.0.0-win64\speedtest.exe"
+      & "$env:OneDriveCommercial\Documents\WindowsPowerShell\ookla-speedtest-1.0.0-win64\speedtest.exe"  --accept-license --accept-gdpr
 
     # else is it just set up elsewhere?  
       } elseif ( Test-Path "$env:USERPROFILE\Documents\WindowsPowerShell\ookla-speedtest-1.0.0-win64" ) { 
-        & "$env:USERPROFILE\Documents\WindowsPowerShell\ookla-speedtest-1.0.0-win64\speedtest.exe"
+        & "$env:USERPROFILE\Documents\WindowsPowerShell\ookla-speedtest-1.0.0-win64\speedtest.exe"  --accept-license --accept-gdpr
 
     # ok, couldn't find it, are they known-folder redirected? Install and run it there
       } elseif ( Test-Path "$env:OneDriveCommercial\Documents" ) { 
@@ -322,7 +322,7 @@ function speedtest {
         Write-Host '04 of 04' -ForegroundColor White -NoNewline
         Write-Host ']: ' -NoNewline
         Write-Host "Running Speedtest"
-          & "$env:OneDriveCommercial\Documents\WindowsPowerShell\ookla-speedtest-1.0.0-win64\speedtest.exe"
+          & "$env:OneDriveCommercial\Documents\WindowsPowerShell\ookla-speedtest-1.0.0-win64\speedtest.exe"  --accept-license --accept-gdpr
 
     # ok, couldn't find it, can't see that they're known-folder redirected? Installing and running it in local docs
       } else {
@@ -346,7 +346,7 @@ function speedtest {
         Write-Host '04 of 04' -ForegroundColor White -NoNewline
         Write-Host ']: ' -NoNewline
         Write-Host "Running Speedtest"
-          & "$env:USERPROFILE\Documents\WindowsPowerShell\ookla-speedtest-1.0.0-win64\speedtest.exe"
+          & "$env:USERPROFILE\Documents\WindowsPowerShell\ookla-speedtest-1.0.0-win64\speedtest.exe"  --accept-license --accept-gdpr
       }
 }
 
