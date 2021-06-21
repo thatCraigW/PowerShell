@@ -1,5 +1,5 @@
 # Current Version
-  $profileVersion = "v2021.05"
+  $profileVersion = "v2021.06"
 
 # Set default directory
   Set-Location C:\
@@ -15,7 +15,7 @@
   $ipAddresses = $ipAddresses -join ", "
 ## Public IP
   [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-  $ipAddressPublic = (Invoke-WebRequest -uri "http://ifconfig.me/ip").Content
+  $ipAddressPublic = (Invoke-WebRequest -uri "http://ifconfig.me/ip" -UseBasicParsing).Content
 
 ## Get today's date on reverse chron order (year, month, date) for sorting files
   $todaysDate = Get-Date -UFormat "%Y-%m-%d"
