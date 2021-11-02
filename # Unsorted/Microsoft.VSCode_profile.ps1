@@ -1,5 +1,5 @@
 # Current Version
-  $profileVersion = "v2021.06"
+  $profileVersion = "v2021.11"
 
 # Set default directory
   Set-Location C:\
@@ -355,14 +355,19 @@ function speedtest {
 # Auto-Update profile if more than 30 days old 
   ## I've put in the hours and minutes here if you really want to tweak more specifically, but they're not required. 
   ## You can just end it at AddDays(-30) if you like ¯\_(ツ)_/¯
+  
+  <# Commented out 2021-11
+  
   if (Test-Path $profile -OlderThan (Get-Date).AddDays(-30).AddHours(-1).AddMinutes(-1)) {
-      # older
-      Write-Host "yep dis old"
-      update
-  } else {
-      # newer
-      Write-Host "nah this not too old"
-  }
+        # older
+        Write-Host "yep dis old"
+        update
+    } else {
+        # newer
+        Write-Host "nah this not too old"
+    }
+  
+  #>
 
 # Hide the on-screen output of those commands for neatness
   Clear-Host
