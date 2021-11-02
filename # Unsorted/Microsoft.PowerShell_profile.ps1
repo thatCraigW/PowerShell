@@ -387,7 +387,7 @@ function speedtest {
   Write-Host $ipAddressPublic -ForegroundColor DarkCyan
   Write-Host `n"Current Aliases:"
   Write-Host "+ Type  " -NoNewLine
-  Write-Host "help" -NoNewLine -ForegroundColor Yellow
+  Write-Host "pshelp" -NoNewLine -ForegroundColor Yellow
   Write-Host "  to view built-in commands & helpers +"
   Write-Host " "
   
