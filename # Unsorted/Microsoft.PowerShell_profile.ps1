@@ -1,5 +1,5 @@
 # Current Version
-  $profileVersion = "v2021.11"
+  $profileVersion = "v2021.06"
 
 # Set default directory
   Set-Location C:\
@@ -114,10 +114,10 @@ function np {
 }
 
 ## Help Display
-function pshelp {
+function help {
   Write-Host "Current Commands:"
   Write-Host "+ " -NoNewLine
-  Write-Host "pshelp" -NoNewLine -ForegroundColor Yellow
+  Write-Host "help" -NoNewLine -ForegroundColor Yellow
   Write-Host "        = Displays this menu"
   Write-Host "+ " -NoNewLine
   Write-Host "update" -NoNewLine -ForegroundColor Yellow
@@ -357,9 +357,6 @@ function speedtest {
 # Auto-Update profile if more than 30 days old 
   ## I've put in the hours and minutes here if you really want to tweak more specifically, but they're not required. 
   ## You can just end it at AddDays(-30) if you like ¯\_(ツ)_/¯
-  
-  <# Commented out 2021-11
-  
   if (Test-Path $profile -OlderThan (Get-Date).AddDays(-30).AddHours(-1).AddMinutes(-1)) {
         # older
         Write-Host "yep dis old"
@@ -368,8 +365,6 @@ function speedtest {
         # newer
         Write-Host "nah this not too old"
     }
-  
-  #>
 
 # Hide the on-screen output of those commands for neatness
   Clear-Host
@@ -387,7 +382,7 @@ function speedtest {
   Write-Host $ipAddressPublic -ForegroundColor DarkCyan
   Write-Host `n"Current Aliases:"
   Write-Host "+ Type  " -NoNewLine
-  Write-Host "pshelp" -NoNewLine -ForegroundColor Yellow
+  Write-Host "help" -NoNewLine -ForegroundColor Yellow
   Write-Host "  to view built-in commands & helpers +"
   Write-Host " "
   
